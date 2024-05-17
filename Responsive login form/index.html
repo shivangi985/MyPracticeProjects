@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lOGIN FORM</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Poppins:400,700,900");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "poppins-bold", sans-serif;
+      }
+      html,
+      body {
+        display: grid;
+        height: 100%;
+        place-items: center;
+        background-color: #7ed6df;
+      }
+      .wrapper {
+        width: 380px;
+        background: #fff;
+        border-radius: 5px;
+      }
+      .wrapper .title {
+        line-height: 80px;
+        background: #16a085;
+        text-align: center;
+        padding-left: 20px;
+        border-radius: 5px 5px 0 0;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 600;
+      }
+      .wrapper form {
+        padding: 30px 25px 25px 25px;
+      }
+      .wrapper form .row {
+        position: relative;
+        height: 45px;
+        /* background: #ff0000; */
+        margin-bottom: 15px;
+        /* border-radius: 5px; */
+      }
+
+      .wrapper form .pass {
+        margin: -10px 0 15px 0;
+      }
+      .wrapper form .pass a {
+        color: #16a885;
+        font-size: 17px;
+        text-decoration: none;
+      }
+      .wrapper form .pass a:hover {
+        text-decoration: underline;
+      }
+
+      .wrapper form .row input {
+        height: 100%;
+        width: 100%;
+        padding-left: 60px;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid lightgray;
+        font-size: 16px;
+        transition: all 0.3s ease;
+      }
+      form .row input:focus {
+        border-color: #16a885;
+        box-shadow: inset 0 0 2px 2px rgba(26, 188, 156, 0.25);
+      }
+      .wrapper form .row i {
+        position: absolute;
+        width: 47px;
+        height: 100%;
+        color: #fff;
+        font-size: 18px;
+        background: #16a885;
+        display: flex;
+        border-radius: 5px 0 0 5px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #16a885;
+      }
+      .wrapper form .button input {
+        padding-left: 0;
+        font-weight: 500;
+        color: #fff;
+        font-size: 18px;
+        background: #16a885;
+        border: 1px solid #16a885;
+        cursor: pointer;
+      }
+      form .button input:hover{
+        background: #12876f;
+      }
+      .wrapper form .signup-link {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 17px;
+      }
+      .wrapper form .signup-link a {
+        color: #16a885;
+        
+        text-decoration: none;
+      }
+      .wrapper form .signup-link a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title"><span>Login|Form</span></div>
+      <!-- form start -->
+      <form action="#">
+        <div class="row">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="E-mail or Phone" required />
+        </div>
+        <div class="row">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Password" required />
+        </div>
+        <div class="pass"><a href="#">Forgot Password?</a></div>
+        <div class="row button">
+          <input type="submit" value="Login" />
+        </div>
+        <div class="signup-link">Not a Member?<a href="#">Signup Now</a></div>
+      </form>
+      <!-- form end -->
+    </div>
+  </body>
+</html>
